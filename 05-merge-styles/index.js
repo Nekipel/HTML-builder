@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const stylesFolder = path.join(__dirname, 'styles');
 
-async function createBundle(pathToFolderDev) {
+async function createBund(pathToFolderDev) {
 
   const files = await fs.promises.readdir(pathToFolderDev, {
     withFileTypes: true,
@@ -25,4 +25,4 @@ async function createBundle(pathToFolderDev) {
   });
 }
 
-createBundle(stylesFolder);
+createBund(stylesFolder);
